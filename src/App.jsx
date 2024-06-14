@@ -40,7 +40,6 @@ function App() {
 
   const mytext1 = `<h1>`;
   const mytext2 = "</h1>";
-  const mytext3 = ""
 
 
   return (
@@ -71,7 +70,7 @@ function App() {
                     <li>
                       <a
                         href="#projects"
-                        className="text-gray-400 hover:text-white cursor-pointer"
+                        className=" hover:font-bold cursor-pointer"
                       >
                         Projects
                       </a>
@@ -79,7 +78,7 @@ function App() {
                     <li>
                       <a
                         href="#technologies"
-                        className="text-gray-400 hover:text-white cursor-pointer"
+                        className=" hover:font-bold cursor-pointer"
                       >
                         Technologies
                       </a>
@@ -87,11 +86,18 @@ function App() {
                     <li>
                       <a
                         href="#aboutme"
-                        className="text-gray-400 hover:text-white cursor-pointer"
+                        className=" hover:font-bold cursor-pointer"
                       >
                         About me
                       </a>
-                      <button onClick={toggleDarkMode}>dark mode</button>
+                    </li>
+                    <li>
+                      <button
+                        className="btn border-[1px] px-[6px] py-[3px] text-[12px] rounded-lg border-sky-500"
+                        onClick={toggleDarkMode}
+                      >
+                        Dark Mode
+                      </button>
                     </li>
                   </ul>
                 </div>
@@ -102,15 +108,18 @@ function App() {
             {/* Intro/Banner section */}
             <section>
               <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
-                <div className="mt-[70px] lg:mt-[10px] md:mt-[10px]
-                " >
+                <div
+                  className="mt-[70px] lg:mt-[10px] md:mt-[10px] mx-0
+                "
+                >
                   <h1 className="font-bold text-2xl gradiant-text" id="myname">
                     <span>{mytext1}</span>
                     <br />
                     <span className="ml-16">Hello,</span>
                     <br />
-                    <span className="ml-16">I'm Bhavesh suthar,</span><br />
-                    <span className="ml-16">frontend developer</span>
+                    <span className="ml-16">I'm Bhavesh suthar,</span>
+                    <br />
+                    <span className="ml-16">Full Stack Developer</span>
                     <br />
                     <span>{mytext2}</span>
                   </h1>
@@ -120,10 +129,12 @@ function App() {
                     </h2> */}
                   </div>
                   <div>
-                    <p className="mt-4 text-gray-400">
-                      Former digital-marketing specialist, seeking to apply
-                      competent development skills with focus on collaboration,
-                      communication, and passion
+                    <p className="mt-4 text-gray-500">
+                      I am a Full Stack Developer specializing in the MERN
+                      stack, proficient in crafting responsive web applications
+                      with robust backend architecture. Passionate about
+                      leveraging MongoDB, Express.js, React, and Node.js to
+                      create seamless user experiences.
                     </p>
                     <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                       Download resume
@@ -148,17 +159,23 @@ function App() {
                   <div className="border border-gray-500 rounded-md p-5 flex-1">
                     <img src={Project1} className="w-full h-auto" />
                     <h3 className="text-2xl font-semibold mt-8">
-                      Furniture store landing page
+                      Electric Vehicle
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                      Responsive HTML/CSS layout for online furniture store.
-                      HTML5, CSS3 (SCSS)
+                      A live project with user and admin panels, dedicated to
+                      electric vehicle management. Users access tailored
+                      features while administrators ensure system integrity.
+                      <br />
+                      Technologies used:
+                      <br />
+                      - Backend: CodeIgniter 3 Framework
+                      <br />
+                      - Frontend: HTML, CSS, Bootstrap
+                      <br />- Database: MySQL
                     </p>
-                    <div className="flex mt-12 gap-2">
-                      <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                        Live preview
-                      </button>
-                      <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+
+                    <div className="mt-5 gap-2">
+                      <button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
                         Checkout github
                       </button>
                     </div>
@@ -166,23 +183,36 @@ function App() {
                   <div className="border border-gray-500 rounded-md p-5 flex-1">
                     <img src={Project2} className="w-full h-auto" />
                     <h3 className="text-2xl font-semibold mt-8">
-                      Designer furniture store landing page
+                      VPL - Cricket Tournament
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                      Responsive HTML/CSS layout for online store of designer
-                      furniture. HTML5, CSS3 (SCSS)
+                      A village-level cricket tournament where participants can
+                      register their teams and view player details.
+                      <br />
+                      Technologies used:
+                      <br />
+                      - Frontend: React.js, Tailwind CSS
+                      <br />
+                      - Backend: Node.js, Express.js
+                      <br />- Database: MongoDB
                     </p>
-                    <div className="flex gap-2 mt-12">
+
+                    {/* <div className="flex gap-2 mt-12">
                       <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                         Live preview
                       </button>
                       <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                         Checkout github
                       </button>
+                    </div> */}
+                    <div className="mt-5 gap-2">
+                      <button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
+                        Checkout github
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+                {/* <div className="flex flex-col sm:flex-row  gap-10 mt-11">
                   <div className="border border-gray-500 rounded-md p-5 flex-1">
                     <img src={Project3} className="w-full h-auto" />
                     <h3 className="text-2xl font-semibold mt-8">
@@ -219,7 +249,7 @@ function App() {
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </section>
             {/* Technoglies section */}
@@ -232,51 +262,51 @@ function App() {
                       <h2 className="font-semibold">HTML</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
-                    <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  </div>
-                  <div className="mt-8">
-                    <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">CSS, Sass & Bootstrap</h2>
-                      <p className="text-gray-500">Advanced</p>
-                    </div>
-                    <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                    <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
                       <h2 className="font-semibold">
-                        JavaScript, TypeScript, JQuery
+                        CSS, Tailwindcss & Bootstrap
                       </h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
-                    <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                    <span className="w-[83%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">UI design in Figma</h2>
-                      <p className="text-gray-500">Advanced</p>
-                    </div>
-                    <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  </div>
-                  <div className="mt-8">
-                    <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">Angular</h2>
+                      <h2 className="font-semibold">JavaScript</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
                     <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">React</h2>
+                      <h2 className="font-semibold">Node.js & Express.js </h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
-                    <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                    <span className="w-[60%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">React Native</h2>
+                      <h2 className="font-semibold">MySql & MongoDB</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
-                    <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                    <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                  </div>
+                  <div className="mt-8">
+                    <div className="flex justify-between items-center">
+                      <h2 className="font-semibold">React</h2>
+                      <p className="text-gray-500">Advanced</p>
+                    </div>
+                    <span className="w-[68%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                  </div>
+                  <div className="mt-8">
+                    <div className="flex justify-between items-center">
+                      <h2 className="font-semibold">PHP & CodeIgniter</h2>
+                      <p className="text-gray-500">Advanced</p>
+                    </div>
+                    <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                 </div>
               </div>
@@ -290,12 +320,12 @@ function App() {
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
                   <div>
                     <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                      Git
+                      GitHub
                     </p>
                   </div>
                   <div>
                     <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                      Wordpress
+                      Quick learning
                     </p>
                   </div>
                   <div>
@@ -303,7 +333,7 @@ function App() {
                       Teamwork
                     </p>
                   </div>
-                  <div>
+                  {/* <div>
                     <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
                       Quick learning
                     </p>
@@ -324,7 +354,7 @@ function App() {
                     <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
                       RWD
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </section>
