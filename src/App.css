@@ -1,0 +1,52 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* body {
+    background-color: #000000;
+    color: #ffffff;
+} */
+
+/* .gradiant-text {
+    -webkit-background-clip: text;
+    @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+    text-wrap: nowrap;
+    display: inline-block;
+    width: max-content;
+    width: 0;
+} */
+
+.gradiant-text {
+    background: linear-gradient(90deg, #3b82f6, #10b981);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    /* Optional: Adds a border to the right of the text */
+    animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+    /* Optional: Animation effects */
+    white-space: nowrap;
+    /* Prevents wrapping of text */
+    display: inline-block;
+    /* Makes the element inline-block to fit content width */
+}
+
+@keyframes typing-text {
+    from {
+        width: 0%;
+    } 
+    to {
+        width: 350px;
+    }
+}
+
+@keyframes typing-text {
+    to {
+        border-color: transparent;
+    }
+}
+
