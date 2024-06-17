@@ -26,13 +26,9 @@ html {
     color: transparent;
     overflow: hidden;
     border-right: 2px solid #fff;
-    /* Optional: Adds a border to the right of the text */
     animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
-    /* Optional: Animation effects */
     white-space: nowrap;
-    /* Prevents wrapping of text */
     display: inline-block;
-    /* Makes the element inline-block to fit content width */
 }
 
 @keyframes typing-text {

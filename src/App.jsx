@@ -278,11 +278,11 @@ function App() {
                       <h2 className="font-semibold">JavaScript</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
-                    <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                    <span className="w-[55%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">Node.js & Express.js </h2>
+                      <h2 className="font-semibold">Node & Express </h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
                     <span className="w-[60%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -296,7 +296,7 @@ function App() {
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">React</h2>
+                      <h2 className="font-semibold">React & Electron</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
                     <span className="w-[68%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -361,44 +361,49 @@ function App() {
             <section className="py-8" id="aboutme">
               <div className="container m-auto px-4">
                 <h2 className="text-2xl font-semibold">About me</h2>
-                <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
+                <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-sky-200">
                   <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                     <h3 className="absolute left-0 text-lg font-semibold">
-                      2015
+                      2017
                     </h3>
                     <p>
-                      Graduated KTC (Krasnodar Technical College) and for about
-                      two years worked with high voltage (35, 110kV) substations
-                      as the specialty electrician of emergency mobile crew.
-                      Later qualified as a Crossfit trainer.
+                      SSC - BSER <br />
+                      Happy Children Sen. sec. School, Bagra (Jalore), Rajsthan
+                      <br />
+                      Percentage : 83.33/100.00
                     </p>
                   </div>
-                  <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                  <div className="pl-24 mt-14 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                     <h3 className="absolute left-0 text-lg font-semibold">
-                      2015
+                      2019
                     </h3>
                     <p>
-                      Underwent a digital marketing course and started to work
-                      as a PPC and project manager in a local web studio. After
-                      3 months started my own freelance practice.
+                      HSC - BSER <br />
+                      Happy Children Sen. sec. School, Bagra (Jalore), Rajsthan
+                      <br />
+                      Percentage : 75.20/100.00
                     </p>
                   </div>
-                  <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                    <h3 className="absolute left-0 text-lg font-semibold">
-                      2015
+                  <div className="pl-24 mt-14 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                    <h3 className="absolute left-[-15px] text-lg font-semibold">
+                      2019-22
                     </h3>
                     <p>
-                      Became more interested in IT and decided to try
-                      programming. Underwent Java course and made a project.
+                      BSc <br />
+                      Mohanlal Sukhadia University, Udaipur, Rajsthan
+                      <br />
+                      Percentage : 75.20/100.00
                     </p>
                   </div>
-                  <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                    <h3 className="absolute left-0 text-lg font-semibold">
-                      2015
+                  <div className="pl-24 mt-14 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                    <h3 className="absolute left-[-15px] text-lg font-semibold">
+                      2022-24
                     </h3>
                     <p>
-                      Worked out in which field I want to build a developer's
-                      career and started to learn Frontend Development.
+                      MCA - Full Stack Web Developer <br />
+                      Parul University, Vadodara
+                      <br />
+                      CGPA : 8.02/10.00
                     </p>
                   </div>
                 </div>
