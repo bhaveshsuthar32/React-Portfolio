@@ -2,12 +2,13 @@ import "./App.css";
 import Porfile from "./assets/Photo.png";
 import Project1 from "./assets/project1.png";
 import Project2 from "./assets/project2.png";
-import Project3 from "./assets/project3.png";
-import Project4 from "./assets/project4.png";
+import Project3 from "./assets/abc1.png";
+import Project4 from "./assets/abc2.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
 import ArrowDown from "./assets/arrow-down.svg";
+
 
 
 import { useEffect, useState } from "react";
@@ -31,7 +32,7 @@ function App() {
       }, [])
       
       
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const toggleDarkMode = () =>{
  
       setDarkMode(!darkMode);
@@ -130,15 +131,18 @@ function App() {
                   </div>
                   <div>
                     <p className="mt-4 text-gray-500">
-                      I am a Full Stack Developer specializing in the MERN
+                      {/* I am a Full Stack Developer specializing in the MERN
                       stack, proficient in crafting responsive web applications
                       with robust backend architecture. Passionate about
                       leveraging MongoDB, Express.js, React, and Node.js to
-                      create seamless user experiences.
+                      create seamless user experiences. */}
+                      MERN stack developer skilled in building full web applications. Proficient in React.js, Node.js, Express.js, and MongoDB/MySQL. Experienced with modern JavaScript, TailwindCSS, Git, and cloud deployment. Focused on creating functional, responsive applications
                     </p>
-                    <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                      Download resume
-                    </button>
+                    <a href="https://drive.google.com/file/d/160SIw8zYrj6dKhx00lxTd3kjU8ZsKeMF/view?usp=drive_link">
+                    <button className="px-8  shadow-gray-500 shadow-md py-3 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+               Download resume
+                      
+                    </button></a>
                   </div>
                 </div>
                 <div className="relative">
@@ -157,37 +161,38 @@ function App() {
                 <h2 className="text-2xl font-semibold">Projects</h2>
                 <div className="flex flex-col sm:flex-row gap-10 mt-11">
                   <div className="border border-gray-500 rounded-md p-5 flex-1">
-                    <img src={Project1} className="w-full h-auto" />
+                    <img src={Project3} className="w-full h-auto" />
                     <h3 className="text-2xl font-semibold mt-8">
-                      Electric Vehicle
+                      EV-Market
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                      A live project with user and admin panels, dedicated to
+                      Developed a full-stack electric vehicle platform using the MERN stack (MongoDB, Express, React, Node.js),
+                      A project with user and admin panels, dedicated to
                       electric vehicle management. Users access tailored
                       features while administrators ensure system integrity.
                       <br />
                       Technologies used:
                       <br />
-                      - Backend: CodeIgniter 3 Framework
+                      - Frontend: React.js, Tailwind CSS
                       <br />
-                      - Frontend: HTML, CSS, Bootstrap
-                      <br />- Database: MySQL
+                      - Backend: Node.js, Express.js 
+                      <br />- Database: MongoDB
                     </p>
 
                     <div className="mt-5 gap-2">
-                      <button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
+                    <a href="https://github.com/bhaveshsuthar32"><button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
                         Checkout github
-                      </button>
+                      </button></a>
                     </div>
                   </div>
                   <div className="border border-gray-500 rounded-md p-5 flex-1">
-                    <img src={Project2} className="w-full h-auto" />
+                    <img src={Project4} className="w-full h-44" />
                     <h3 className="text-2xl font-semibold mt-8">
-                      VPL - Cricket Tournament
+                      Music-Mix
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                      A village-level cricket tournament where participants can
-                      register their teams and view player details.
+                    Developed a full-stack Spotify clone using the MERN stack (MongoDB, Express, React, Node.js), featuring robust user authentication
+                    and a responsive design for seamless cross-device usage.
                       <br />
                       Technologies used:
                       <br />
@@ -206,9 +211,9 @@ function App() {
                       </button>
                     </div> */}
                     <div className="mt-5 gap-2">
-                      <button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
+                    <a href="https://github.com/bhaveshsuthar32"><button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
                         Checkout github
-                      </button>
+                      </button></a>
                     </div>
                   </div>
                 </div>
@@ -289,17 +294,17 @@ function App() {
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
-                      <h2 className="font-semibold">MySql & MongoDB</h2>
-                      <p className="text-gray-500">Advanced</p>
-                    </div>
-                    <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-                  </div>
-                  <div className="mt-8">
-                    <div className="flex justify-between items-center">
                       <h2 className="font-semibold">React & Electron</h2>
                       <p className="text-gray-500">Advanced</p>
                     </div>
                     <span className="w-[68%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                  </div>
+                  <div className="mt-8">
+                    <div className="flex justify-between items-center">
+                      <h2 className="font-semibold">MySql & MongoDB</h2>
+                      <p className="text-gray-500">Advanced</p>
+                    </div>
+                    <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
                   </div>
                   <div className="mt-8">
                     <div className="flex justify-between items-center">
@@ -413,7 +418,7 @@ function App() {
           <footer>
             <div className="container m-auto flex justify-between px-4 py-6">
               <div>
-                <p className="text-gray-300 text-sm">Copyright @ 2023</p>
+                <p className="text-gray-300 text-sm">Copyright @ 2024</p>
               </div>
               <div>
                 <ul className="flex gap-4">
