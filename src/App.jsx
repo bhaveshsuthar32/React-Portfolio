@@ -1,6 +1,5 @@
 import "./App.css";
-import Porfile from "./assets/photo.png";
-// import Project1 from "./assets/project1.png";
+import Porfile from "./assets/photo1.png";
 import Project2 from "./assets/project-mern.png";
 import Project3 from "./assets/abc1.png";
 import Project4 from "./assets/vpl.png";
