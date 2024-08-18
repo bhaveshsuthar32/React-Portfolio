@@ -1,9 +1,9 @@
 import "./App.css";
-import Porfile from "./assets/Photo.png";
-import Project1 from "./assets/project1.png";
-import Project2 from "./assets/project2.png";
+import Porfile from "./assets/photo.png";
+// import Project1 from "./assets/project1.png";
+import Project2 from "./assets/project-mern.png";
 import Project3 from "./assets/abc1.png";
-import Project4 from "./assets/abc2.png";
+import Project4 from "./assets/vpl.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -146,10 +146,10 @@ function App() {
                   </div>
                 </div>
                 <div className="relative">
-                  <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
+                  <div className="after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40  before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
                     <img
                       src={Porfile}
-                      className="relative z-10 w-[280px] m-auto sm:w-[600px]"
+                      className="relative z-10 w-[280px] mt-[40px] m-auto sm:w-[600px] hidden md:block"
                     />
                   </div>
                 </div>
@@ -159,14 +159,14 @@ function App() {
             <section id="projects">
               <div className="container m-auto px-4 sm:py-12">
                 <h2 className="text-2xl font-semibold">Projects</h2>
-                <div className="flex flex-col sm:flex-row gap-10 mt-11">
-                  <div className="border border-gray-500 rounded-md p-5 flex-1">
+                <div className="flex flex-col grid grid-cols-2 sm:flex-row gap-10 mt-11">
+                  <div className="border border-gray-500 col-span-1 rounded-md p-5 ">
                     <img src={Project3} className="w-full h-auto" />
                     <h3 className="text-2xl font-semibold mt-8">
                       EV-Market
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                      Developed a full-stack electric vehicle platform using the MERN stack (MongoDB, Express, React, Node.js),
+                      Developed a full-stack electric vehicle platform using the MERN stack,
                       A project with user and admin panels, dedicated to
                       electric vehicle management. Users access tailored
                       features while administrators ensure system integrity.
@@ -180,19 +180,41 @@ function App() {
                     </p>
 
                     <div className="mt-5 gap-2">
+                    <a href="https://github.com/bhaveshsuthar32"><button className="text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
+                        Checkout github
+                      </button></a>
+                    </div>
+                  </div>
+                  <div className="border border-gray-500 rounded-md col-span-1 p-5 ">
+                    <img src={Project4} className="w-full h-44" />
+                    <h3 className="text-2xl font-semibold mt-8">
+                      VPL 
+                    </h3>
+                    <p className="text-gray-400 text-sm mt-2">
+                    Developed a full-stack VPL-Cricket-Tournament using the MERN stack, Comprehensive cricket tournament management platform.
+                      <br />
+                      Technologies used:
+                      <br />
+                      - Frontend: React.js, Tailwind CSS
+                      <br />
+                      - Backend: Node.js, Express.js
+                      <br />- Database: MongoDB
+                    </p>
+
+                  
+                    <div className="mt-5 gap-2">
                     <a href="https://github.com/bhaveshsuthar32"><button className=" text-sm py-1 px-4 border rounded-[4px] hover:border-blue-500 hover:text-blue-500">
                         Checkout github
                       </button></a>
                     </div>
                   </div>
-                  <div className="border border-gray-500 rounded-md p-5 flex-1">
-                    <img src={Project4} className="w-full h-44" />
+                  <div className="border border-gray-500 rounded-md col-span-1 p-5 ">
+                    <img src={Project2} className="w-full h-44" />
                     <h3 className="text-2xl font-semibold mt-8">
-                      Music-Mix
+                    MERN-Ecommerce
                     </h3>
                     <p className="text-gray-400 text-sm mt-2">
-                    Developed a full-stack Spotify clone using the MERN stack (MongoDB, Express, React, Node.js), featuring robust user authentication
-                    and a responsive design for seamless cross-device usage.
+                    Developed a full-stack MERN-Ecommerce using the MERN stack. Implemented core e-commerce functionalities including shopping cart and order management for a seamless user experience.
                       <br />
                       Technologies used:
                       <br />
