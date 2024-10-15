@@ -418,7 +418,7 @@ function App() {
                       BSc <br />
                       Mohanlal Sukhadia University, Udaipur, Rajsthan
                       <br />
-                      Percentage : 75.20/100.00
+                      Percentage : 78.92/100.00
                     </p>
                   </div>
                   <div className="pl-24 mt-14 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
